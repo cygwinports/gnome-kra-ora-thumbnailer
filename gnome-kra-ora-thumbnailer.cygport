@@ -6,3 +6,7 @@ RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="Krita/OpenRaster image thumbnailers"
 DESCRIPTION="Thumbnailer for Krita and OpenRaster images"
+
+if defined ARCH_i686; then
+PATCH_URI="1.3-libarchive-compat.patch"
+fi

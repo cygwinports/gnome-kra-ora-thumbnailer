@@ -1,0 +1,22 @@
+--- origsrc/gnome-kra-ora-thumbnailer-1.3/gnome-kra-thumbnailer.c	2013-12-19 08:46:08.000000000 -0600
++++ src/gnome-kra-ora-thumbnailer-1.3/gnome-kra-thumbnailer.c	2014-03-26 13:14:22.930222000 -0500
+@@ -81,7 +81,7 @@ file_get_zipped_contents (const char   *
+ 		}
+ 		archive_read_data_skip(a);
+ 	}
+-	archive_read_free(a);
++	archive_read_finish(a);
+ 
+ 	return ret;
+ }
+--- origsrc/gnome-kra-ora-thumbnailer-1.3/gnome-openraster-thumbnailer.c	2013-12-19 08:46:27.000000000 -0600
++++ src/gnome-kra-ora-thumbnailer-1.3/gnome-openraster-thumbnailer.c	2014-03-26 13:13:43.280687200 -0500
+@@ -81,7 +81,7 @@ file_get_zipped_contents (const char   *
+ 		}
+ 		archive_read_data_skip(a);
+ 	}
+-	archive_read_free(a);
++	archive_read_finish(a);
+ 
+ 	return ret;
+ }
